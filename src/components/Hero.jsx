@@ -42,7 +42,7 @@ export default function Hero() {
               </span>
             </div>
 
-            <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight">
+            <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight">
               <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
                 Code Faster
               </span>
@@ -56,9 +56,9 @@ export default function Hero() {
 
             <p className="text-md sm:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-6 sm:mb-8 slide-in-from-bottom duration-700 delay-200">
               Accelerate your development workflow with intelligent code
-              <br />
+              
               completion, automated testing, and smart debugging. ship
-              <br />
+             
               production-ready code 10x faster.
             </p>
 
@@ -79,7 +79,7 @@ export default function Hero() {
 
           <div className="relative order-2 w-full">
             <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-4 sm:p-4 shadow-2xl border border-white/10">
-              <div className="bg-gradient-to-br from-gray-900/20 to-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:w-[350px] lg:[450px] border border-white/5 ">
+              <div className="bg-gradient-to-br from-gray-900/20 to-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[350px] lg:h-[450px] border border-white/5 ">
                 {/* IDE HEADER */}
                 <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
                   <div className="flex items-center space-x-2">
@@ -145,6 +145,9 @@ export default function Hero() {
                         lineHeight: "1.4",
                         height: "100%",
                         border: "1px solid #3c3c3c",
+                        wordWrap: "break-word",
+                        whiteSpace: "pre-wrap",
+                        textAlign: "left",
                       }}
                     >
                       {codeExamples[activeTab]}
